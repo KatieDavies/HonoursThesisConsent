@@ -11,6 +11,27 @@
             function onexit() {
               self.close(); // no harm, no foul here
             }
+            
+            // function to extract data from URL variables
+  function getUrlVars() { // #SONA
+    var vars = {}; // #SONA
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,function(m,key,value) { // #SONA
+        vars[key] = value; // #SONA
+    }); // #SONA
+    return vars; // #SONA
+  } // #SONA
+
+// function to go find data in the URL
+// should be provided a defualt (e.g., "") so that there will be no errors thrown
+  function getUrlParam(parameter, defaultvalue){ // #SONA
+    var urlparameter = defaultvalue; // #SONA
+    if(window.location.href.indexOf(parameter) > -1){ // #SONA
+        urlparameter = getUrlVars()[parameter]; // #SONA
+        } // #SONA
+    return urlparameter; // #SONA
+  }
+var SONA_ID = getUrlParam('id','Empty'); // #SONA
+
         </script>
     </head>
     <body>

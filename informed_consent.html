@@ -118,14 +118,14 @@ This research has been approved by the Research Ethics Board at the University o
                     <!-- set up a button group so that any of the buttons will end the trial -->
                     <div class="btn-group"; id = "consent-btns">
                       <!-- set up the "agree" button. It sets the consent_check to true so the debriefing trial will be skipped -->
-                      <button type="button"; id = "agree-btn"; class="btn btn-primary btn-lg"; style="font-size: 20pt"; onClick = "window.location.href = 'https://pavlovia.org/run/daviesk5/correlationexperiment1'+SONA_ID">I agree</button>
+                      <button type="button"; id = "agree-btn"; class="btn btn-primary btn-lg"; style="font-size: 20pt"; onClick = "window.location.href = 'https://pavlovia.org/run/daviesk5/correlationexperiment1?id='+SONA_ID">I agree</button>
 
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     
                     <!-- set up the "disagree" button, it does not change the consent_check to true so the debrief will happen -->
-                    <button type="button"; id = "agree-btn"; class="btn btn-danger btn-lg"; style="font-size: 20pt"
+                    <button type="button"; id = "agree-btn"; class="btn btn-danger btn-lg"; style="font-size: 20pt"; onClick = "window.location.href = 'https://katiedavies.github.io/HonoursThesisConsent/no_consent?id='+SONA_ID"
                     <span class="glyphicon glyphicon-ban-circle"></span> No, I do not want to participate
                     </button>
                     </div>
